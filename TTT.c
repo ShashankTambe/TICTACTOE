@@ -15,8 +15,6 @@ char board [3][3];
 const char PLAYER = 'X';
 const char COMPUTER = 'O';
 
-
-
 int main()
 {
     char winner=' ';
@@ -53,7 +51,6 @@ int main()
     return 0;
 }
 
-
 void resetboard()
 {
     for(int i = 0;i<3;i++)
@@ -65,7 +62,6 @@ void resetboard()
     }
 }
 
-
 void printboard()
 {
     printf(" %c | %c | %c", board[0][0],board[0][1],board[0][2]);
@@ -76,7 +72,6 @@ void printboard()
     printf("\n");
 
 }
-
 
 int checkfreespaces()
 {
@@ -93,7 +88,6 @@ int checkfreespaces()
     }
     return freespaces;
 }
-
 
 void playermove()
 {
@@ -120,7 +114,6 @@ void playermove()
     } while (board[x][y] != ' ');
 }
 
-
 void computermove()
 {
     srand(time(0));
@@ -142,7 +135,6 @@ void computermove()
     }
     
 }
-
 
 char checkwinner()
 {
@@ -173,7 +165,6 @@ char checkwinner()
     }
     return ' ';
 }
-
 
 void printwinner(char winner)
 {
